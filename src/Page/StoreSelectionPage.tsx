@@ -1,6 +1,6 @@
 import React from "react";
 import StoreItem from "../Item/StoreItem";
-import storesData from "../Stores/storesData";
+import {storesData} from "../Stores/storesData";
 import "../scss/StoreSelectionPage.scss";
 
 class StoreSelectionPage extends React.Component {

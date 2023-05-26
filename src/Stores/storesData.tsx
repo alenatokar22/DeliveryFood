@@ -1,16 +1,16 @@
 interface StoreData {
   id: number;
   name: string;
-  info: ImageData[];
+  info: StoreImageData[];
 }
 
-interface ImageData {
+interface StoreImageData {
   name: string;
   url: string;
   price: number;
 }
 
-const storesData: { [key: string]: StoreData } = {
+export const storesData: { [key: string]: StoreData } = {
   "McDonald’s": {
     id: 1,
     name: "McDonald’s",
@@ -292,5 +292,3 @@ const storesData: { [key: string]: StoreData } = {
     ],
   },
 };
-
-export default storesData;
