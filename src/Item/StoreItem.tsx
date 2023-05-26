@@ -1,6 +1,6 @@
 import React from "react";
-import "../scss/storeItem.scss";
 import { Link } from "react-router-dom";
+import "../scss/StoreData.scss";
 
 interface StoreItemProps {
   name: string;
