@@ -3,14 +3,13 @@ import storesData from "../Stores/storesData";
 import "../scss/storePage.scss";
 
 interface StoreData {
-  id: number;
-  name: string;
   info: ImageData[];
 }
 
 interface ImageData {
   name: string;
   url: string;
+  id: number;
 }
 
 const StorePage = () => {
