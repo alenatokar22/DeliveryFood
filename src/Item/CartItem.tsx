@@ -1,5 +1,4 @@
 import React from 'react';
-import '../scss/cartItem.scss';
 
 interface CartItemProps {
   name: string;

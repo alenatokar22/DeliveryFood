@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { storesData } from "./storesData";
-import "../scss/storePage.scss";
 
 interface StoreImageData {
   name: string;

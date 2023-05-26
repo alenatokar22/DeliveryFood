@@ -1,6 +1,5 @@
 import React from 'react';
 import CartItem from '../Item/CartItem';
-import '../scss/shoppingCartPage.scss';
 
 class ShoppingCartPage extends React.Component {
   render() {

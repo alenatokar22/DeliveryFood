@@ -1,7 +1,6 @@
 import React from "react";
 import StoreItem from "../Item/StoreItem";
 import { storesData } from "../Stores/storesData";
-import "../scss/storeSelectionPage";
 
 class StoreSelectionPage extends React.Component {
   render() {
