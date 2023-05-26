@@ -1,5 +1,6 @@
 import React from "react";
 import StoreItem from "../Item/StoreItem";
+import storesData from "../Stores/storesData";
 import "../scss/StoreSelectionPage.scss";
 
 class StoreSelectionPage extends React.Component {
@@ -8,11 +9,9 @@ class StoreSelectionPage extends React.Component {
       <div className="store-selection-page">
         <h1>Shops:</h1>
         <div className="store-items">
-          <StoreItem name="McDonald’s" />
-          <StoreItem name="KFC" />
-          <StoreItem name="Burger King" />
-          <StoreItem name="Starbucks" />
-          <StoreItem name="Domino’s Pizza" />
+          {Object.keys(storesData).map((storeName) => (
+            <StoreItem key={storesData[storeName].id} name={storeName} />
+          ))}
         </div>
       </div>
     );

@@ -1,6 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import StoreSelectionPage from "./Page/StoreSelectionPage";
+import StorePage from "./Stores/StorePage";
 
 class App extends React.Component {
   render() {
@@ -8,15 +9,16 @@ class App extends React.Component {
       <div className="pages">
         <div className="container">
           <Router>
-            <a href="" className="breadcrumbs">
-              Shops
-            </a>
-            <a href="" className="breadcrumbs">
-              Shopping cart
-            </a>
+            <Link to="/" className="breadcrumbs">
+              <span>Shops</span>
+            </Link>
+            <Link to="/" className="breadcrumbs">
+              <span>Shopping cart</span>
+            </Link>
             <div className="wrapper">
+              <StoreSelectionPage />
               <Routes>
-                <Route path="/" element={<StoreSelectionPage />} />
+                <Route path="/store/:name" element={<StorePage />} />
               </Routes>
             </div>
           </Router>

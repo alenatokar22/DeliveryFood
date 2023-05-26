@@ -1,0 +1,13 @@
+.cart-item {
+  .item-info {
+    flex: 1;
+  }
+
+  .remove-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+}
