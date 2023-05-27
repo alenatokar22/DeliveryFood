@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import StoreItem from "../Item/StoreItem";
 import { storesData } from "../Stores/storesData";
 

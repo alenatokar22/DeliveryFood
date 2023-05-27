@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { storesData } from "./storesData";
+import StoreSelectionPage from "../Page/StoreSelectionPage";
 
 interface StoreImageData {
   name: string;
@@ -23,6 +24,7 @@ const StorePage = () => {
 
   return (
     <div className="store-page">
+      <StoreSelectionPage />
       <div className="store-page__item">
         {store.info.map((imageData: StoreImageData) => (
           <div className="store-page__info" key="index">
@@ -32,7 +34,7 @@ const StorePage = () => {
               alt={imageData.name}
             />
             <p className="store-page__title">{imageData.name}</p>
-            <div className="store-page__block" key="index2">
+            <div className="store-page__block" key="index +2">
               <button
                 className="store-page__btn"
                 title="The item should be added in the Shopping Cart"

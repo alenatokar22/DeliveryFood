@@ -35,9 +35,14 @@ a {
   padding-top: 30px;
 }
 
+.crumbs {
+  margin-bottom: 40px;
+}
+
 .breadcrumbs {
   font-size: 30px;
   padding: 0 20px 10px 20px;
+  margin-bottom: 50px;
 
   &:first-child {
     border-right: 6px solid #000;
