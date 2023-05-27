@@ -29,7 +29,9 @@ class ShoppingCartPage extends React.Component {
               />
             </div>
           </div>
-          <div className="cart-items">{/* <CartItem /> */}</div>
+          <div className="cart-items">
+            <CartItem name={name}/>
+            </div>
         </div>
         <div className="cart-total">
           <span>Total price:</span>
